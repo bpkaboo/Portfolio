@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>VibeSpace Project</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <style>
+    /* Lightbox hidden by default */
+    #lightbox {
+      display: none;
+    }
+  </style>
+</head>
+
+<body class="bg-black text-white p-10">
+
+  <h1 class="text-4xl font-bold mb-10 text-center">
+    My Certificates
+  </h1>
+
+  <!-- GALLERY GRID -->
+  <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+
+    <!-- IMAGE -->
+    <img src="/images/certificate/cerf1.jpg" class="gallery-img rounded-xl h-64 w-full object-cover cursor-pointer hover:scale-105 transition" />
+    <img src="/images/certificate/cerf2.jpg" class="gallery-img rounded-xl h-64 w-full object-cover cursor-pointer hover:scale-105 transition" />
+    <img src="/images/certificate/cerf3.jpg" class="gallery-img rounded-xl h-64 w-full object-cover cursor-pointer hover:scale-105 transition" />
+    <img src="/images/certificate/cerf4.jpg" class="gallery-img rounded-xl h-64 w-full object-cover cursor-pointer hover:scale-105 transition" />
+    
+
+  <!-- LIGHTBOX -->
+  <div id="lightbox" class="fixed inset-0 bg-black bg-opacity-90 flex items-center justify-center z-50">
+
+    <!-- CLOSE BUTTON -->
+    <span id="closeBtn" class="absolute top-5 right-8 text-white text-4xl cursor-pointer">&times;</span>
+
+    <!-- FULL IMAGE -->
+    <img id="lightboxImg" class="max-w-[90%] max-h-[90%] rounded-xl" />
+
+  </div>
+
+  <!-- BACK BUTTON -->
+  <div class="text-center mt-10">
+  <a href="/" class="text-blue-400 hover:underline">
+    ← Back 
+  </a>
+</div>
+
+  <!-- SCRIPT -->
+  <script>
+    const images = document.querySelectorAll(".gallery-img");
+    const lightbox = document.getElementById("lightbox");
+    const lightboxImg = document.getElementById("lightboxImg");
+    const closeBtn = document.getElementById("closeBtn");
+
+    images.forEach(img => {
+      img.addEventListener("click", () => {
+        lightbox.style.display = "flex";
+        lightboxImg.src = img.src;
+      });
+    });
+
+    closeBtn.onclick = () => {
+      lightbox.style.display = "none";
+    };
+
+    lightbox.onclick = (e) => {
+      if (e.target !== lightboxImg) {
+        lightbox.style.display = "none";
+      }
+    };
+  </script>
+
+</body>
+</html>
