@@ -3,30 +3,29 @@
 <head>
   <meta charset="UTF-8" />
   <title>My Resume</title>
+  <link rel="stylesheet" href="styles.css" />
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
 <body class="bg-black text-white flex flex-col items-center justify-center min-h-screen p-6">
 
-  <h1 class="text-3xl font-bold mb-6">My Resume</h1>
+  <div class="max-w-screen-xl w-full flex flex-col items-center">
+    <h1 class="text-3xl font-bold mb-6 mt-20">My Resume</h1>
 
-  <!-- CV VIEW -->
-  <div class="w-full max-w-4xl h-[600px] mb-6">
-    <iframe
-      src="/Resume.pdf"
-      class="w-full h-full rounded-xl border border-gray-700"
-    ></iframe>
+    <!-- CV VIEW -->
+    <div class="resume-wrapper">
+      <iframe src="./Resume.pdf" title="Resume"></iframe>
+    </div>
+
+    <div class="mt-10 mb-10">
+      <a
+        href="index.html"
+        class="inline-block px-6 py-3 border border-white rounded-full hover:bg-white hover:text-black transition"
+      >
+        ← Back 
+      </a>
+    </div>
   </div>
-  </div> <!-- end of contact buttons -->
-
-<div class="mt-10">
-  <a
-    href="/"
-    class="inline-block px-6 py-3 border border-white rounded-full hover:bg-white hover:text-black transition"
-  >
-    ← Back 
-  </a>
-</div>
 
 </body>
 </html>

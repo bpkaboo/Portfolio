@@ -4,13 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Student Intern Portfolio</title>
-
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Space+Grotesk:wght@400;500;700&display=swap"
-      rel="stylesheet"
-    />
+    
 
     <link rel="stylesheet" href="./styles.css" />
   </head>
@@ -18,10 +12,6 @@
   <body>
     <div class="page-shell">
       <main class="portfolio-board">
-
-        <aside class="left-rail" aria-label="Section menu">
-          <span></span>
-        </aside>
 
         <!-- ABOUT -->
         <section class="profile-card reveal" id="about">
@@ -33,9 +23,10 @@
           <div class="portrait-frame">
             <div class="halo halo-a"></div>
             <div class="halo halo-b"></div>
+            <div class="halo halo-c"></div>
             <div class="portrait">
-  <img src="./images/Bpka.jpg" alt="Bipika Shrestha" />
-</div>
+              <img src="./images/Bpka.jpg" alt="Bipika Shrestha" />
+            </div>
           </div>
 
           <div class="profile-copy">
@@ -63,30 +54,24 @@
           </div>
 
           <div class="showcase-grid">
-<a href="/certificate.html" class="block">
-  <article class="feature-card project-card reveal delay-1 cursor-pointer">
-
-    <div class="project-art">
-      <div class="art-leaf leaf-a"></div>
-      <div class="art-leaf leaf-b"></div>
-      <div class="art-leaf leaf-c"></div>
-      <div class="flamingo-neck"></div>
-      <div class="flamingo-body"></div>
-
-      <!-- OPTIONAL BUTTON (visual only now) -->
-      <div class="play-button">
-        <span></span>
-      </div>
-    </div>
-
-    <div class="project-meta">
-      <span><strong>Training Certificates</strong></span>
-
-    
-    </div>
-
-  </article>
-</a>
+            <!-- CERTIFICATES -->
+            <a href="certificate.html" class="block">
+              <article class="feature-card project-card reveal delay-1 cursor-pointer">
+                <div class="project-art">
+                  <div class="art-leaf leaf-a"></div>
+                  <div class="art-leaf leaf-b"></div>
+                  <div class="art-leaf leaf-c"></div>
+                  <div class="flamingo-neck"></div>
+                  <div class="flamingo-body"></div>
+                  <div class="play-button">
+                    <span></span>
+                  </div>
+                </div>
+                <div class="project-meta">
+                  <span><strong>Training Certificates</strong></span>
+                </div>
+              </article>
+            </a>
 
             <!-- MY WORKS -->
             <a href="MyProject.html" class="block">
@@ -96,7 +81,7 @@
             </a>
 
             <!-- RESUME -->
-            <a href="/about.html" class="block">
+            <a href="about.html" class="block">
               <article class="tile-card black reveal delay-2 cursor-pointer">
                 <div class="orb"></div>
                 <span>My Resume</span>
@@ -104,12 +89,13 @@
             </a>
 
             <!-- CONTACT -->
-            <article class="stat-wide amber reveal delay-3">
-              <strong>Contact</strong>
-              <p>Let’s build thoughtful products together.</p>
-              <a href="/contact.html">Get in touch</a>
-            </article>
-
+            <a href="contact.html" class="block">
+              <article class="stat-wide amber reveal delay-3">
+                <strong>Contact</strong>
+                <p>Let’s build thoughtful products together.</p>
+                <div class="contact-btn">Get in touch</div>
+              </article>
+            </a>
           </div>
         </section>
 
@@ -125,6 +111,6 @@
       document.getElementById("year").textContent = new Date().getFullYear();
     </script>
 
-    <script src="/script.js"></script>
+    <script src="./public/script.js"></script>
   </body>
 </html>
