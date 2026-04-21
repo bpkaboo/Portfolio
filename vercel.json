@@ -1,11 +1,12 @@
 {
-  "cleanUrls": true,
-  "routes": [
-    { "handle": "filesystem" },
-    { "src": "/about", "dest": "/about.html" },
-    { "src": "/contact", "dest": "/contact.html" },
-    { "src": "/certificate", "dest": "/certificate.html" },
-    { "src": "/myproject", "dest": "/MyProject.html" },
-    { "src": "/(.*)", "dest": "/index.html" }
+  "rewrites": [
+    { "source": "/about", "destination": "/about.html" },
+    { "source": "/contact", "destination": "/contact.html" },
+    { "source": "/certificate", "destination": "/certificate.html" },
+    { "source": "/myproject", "destination": "/MyProject.html" },
+    { "source": "/MyProject", "destination": "/MyProject.html" },
+    { "source": "/tradern", "destination": "/tradern.html" },
+    { "source": "/vibespace", "destination": "/vibespace.html" },
+    { "source": "/(.*)", "destination": "/index.html" }
   ]
 }
