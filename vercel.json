@@ -6,7 +6,6 @@
     { "source": "/myproject", "destination": "/MyProject.html" },
     { "source": "/MyProject", "destination": "/MyProject.html" },
     { "source": "/tradern", "destination": "/tradern.html" },
-    { "source": "/vibespace", "destination": "/vibespace.html" },
-    { "source": "/(.*)", "destination": "/index.html" }
+    { "source": "/vibespace", "destination": "/vibespace.html" }
   ]
 }
